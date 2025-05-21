@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   final String? hintText;
   final Widget? sufixicon;
-  final Icon?prefixicon;
+  final Icon? prefixicon;
   final double? width;
   final double? hight;
   final IconData? iconfeild;
@@ -35,7 +35,6 @@ class CustomTextField extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(bottom: 10),
         child: TextFormField(
-          
           //=======================
           controller: controller,
           validator: validator,
@@ -61,7 +60,7 @@ class CustomTextField extends StatelessWidget {
               borderSide: BorderSide(color: Appcolor.primary, width: 1),
             ),
             focusedBorder: OutlineInputBorder(
-               borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(20),
               borderSide: BorderSide(color: Appcolor.primary, width: 5),
             ),
 

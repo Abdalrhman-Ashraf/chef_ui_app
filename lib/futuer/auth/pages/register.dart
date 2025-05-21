@@ -31,8 +31,7 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-       
+      appBar: AppBar(
         actions: [
           WigetBack(
             onpress: () {
@@ -55,13 +54,13 @@ class _RegisterState extends State<Register> {
                     SizedBox(
                       width: 186,
                       height: 150,
-                      child: Image.asset(
-                        Appicons.Logo,
-                        fit: BoxFit.contain,
-                      ),
+                      child: Image.asset(Appicons.Logo, fit: BoxFit.contain),
                     ),
                     //=================Text=======================
-                    Text("انشاءحساب", style: getBodyTextStyle(context,fontSize: 33)),
+                    Text(
+                      "انشاءحساب",
+                      style: getBodyTextStyle(context, fontSize: 33),
+                    ),
 
                     //========================username===============
                     CustomTextField(

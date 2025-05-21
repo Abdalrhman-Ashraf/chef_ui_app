@@ -30,7 +30,7 @@ class HeaderSection extends StatelessWidget {
           ),
           Text(
             'شيف محترف بخبرة واسعة في تقديم أشهى الأطباق بنكهات مميزة ولمسة إبداعية. أحرص على استخدام أجود المكونات لضمان تجربة طعام فريدة. استمتع معي برحلة لذيذة تأخذك إلى عالم من النكهات الأصيلة',
-            style: TextStyle(color: Appcolor.white,fontSize: 16),
+            style: TextStyle(color: Appcolor.white, fontSize: 16),
           ),
         ],
       ),

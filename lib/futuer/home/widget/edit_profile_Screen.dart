@@ -159,7 +159,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                       show_dialog(
                         context,
                         'تم تعديل بيانات الحساب',
-                        pop(context,EditProfileScreen())
+                        pop(context, EditProfileScreen()),
                       );
                     },
                     child: const Text(

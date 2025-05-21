@@ -7,7 +7,6 @@ import 'package:chef_ui_app/futuer/home/widget/coustm_text_field.dart';
 import 'package:chef_ui_app/futuer/home/widget/edit_profile_Screen.dart';
 import 'package:flutter/material.dart';
 
-
 class Profilw_view extends StatefulWidget {
   const Profilw_view({super.key});
 
@@ -55,17 +54,17 @@ class _Profilw_viewState extends State<Profilw_view> {
         title: const Text(
           "الملف الشخصي",
           style: TextStyle(
-              fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
         ),
         centerTitle: true,
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications, color: Colors.black),
             onPressed: () {
-
-          
-            push(context, NotificationPage());
-          
+              push(context, NotificationPage());
             },
           ),
         ],
@@ -88,8 +87,11 @@ class _Profilw_viewState extends State<Profilw_view> {
                     radius: screenWidth * 0.05,
                     backgroundColor: Colors.orange,
                     child: IconButton(
-                      icon: const Icon(Icons.camera_alt,
-                          color: Colors.white, size: 18),
+                      icon: const Icon(
+                        Icons.camera_alt,
+                        color: Colors.white,
+                        size: 18,
+                      ),
                       onPressed: () {},
                     ),
                   ),
@@ -100,8 +102,11 @@ class _Profilw_viewState extends State<Profilw_view> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon:
-                        const Icon(Icons.edit, color: Colors.orange, size: 20),
+                    icon: const Icon(
+                      Icons.edit,
+                      color: Colors.orange,
+                      size: 20,
+                    ),
                     onPressed: () {
                       push(context, EditProfileScreen());
                     },
@@ -113,29 +118,38 @@ class _Profilw_viewState extends State<Profilw_view> {
                   ),
                 ],
               ),
-              const Text("waleed_al qdafi22@gmail.com",
-                  style: TextStyle(fontSize: 15, color: Colors.grey)),
+              const Text(
+                "waleed_al qdafi22@gmail.com",
+                style: TextStyle(fontSize: 15, color: Colors.grey),
+              ),
               SizedBox(height: screenHeight * 0.03),
               ProfileTextField(label: "الاسم", controller: nameController),
               ProfileTextField(
-                  label: "رقم الهاتف", controller: phoneController),
+                label: "رقم الهاتف",
+                controller: phoneController,
+              ),
               ProfileTextField(
-                  label: "البريد الإلكتروني", controller: emailController),
+                label: "البريد الإلكتروني",
+                controller: emailController,
+              ),
               ProfileTextField(
-                  label: "كلمة المرور",
-                  controller: passwordController,
-                  obscureText: true),
+                label: "كلمة المرور",
+                controller: passwordController,
+                obscureText: true,
+              ),
               ProfileTextField(label: "الموقع", controller: locationController),
               SizedBox(height: screenHeight * 0.04),
               SizedBox(
                 width: screenWidth * 0.6,
                 child: OutlinedButton.icon(
                   onPressed: () {
-                    pushrelacement(context,LogIn());
+                    pushrelacement(context, LogIn());
                   },
                   icon: const Icon(Icons.logout, color: Colors.red),
-                  label: const Text('تسجيل الخروج',
-                      style: TextStyle(color: Colors.red)),
+                  label: const Text(
+                    'تسجيل الخروج',
+                    style: TextStyle(color: Colors.red),
+                  ),
                   style: OutlinedButton.styleFrom(
                     side: const BorderSide(color: Colors.red),
                     shape: RoundedRectangleBorder(

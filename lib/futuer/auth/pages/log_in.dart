@@ -132,7 +132,7 @@ class _LogInState extends State<LogIn> {
                                 style: TextStyle(
                                   fontSize: 17,
                                   color: Appcolor.black,
-                                  fontWeight: FontWeight.bold
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
@@ -140,10 +140,10 @@ class _LogInState extends State<LogIn> {
                             Text(
                               "تذكرني",
                               style: TextStyle(
-                                  fontSize: 17,
-                                  color: Appcolor.black,
-                                  fontWeight: FontWeight.bold
-                                ),
+                                fontSize: 17,
+                                color: Appcolor.black,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
 
                             Checkbox(
@@ -166,7 +166,7 @@ class _LogInState extends State<LogIn> {
                         if (formkey.currentState!.validate()) {
                           print(phonecontroller.text);
                           print(password.text);
-                        push(context, NavBar());
+                          push(context, NavBar());
                         }
                       },
 
@@ -181,11 +181,15 @@ class _LogInState extends State<LogIn> {
                     RichText(
                       text: TextSpan(
                         text: "ليس لديك حساب?",
-                        style: getSmall17(context,color: Appcolor.black),
+                        style: getSmall17(context, color: Appcolor.black),
                         children: [
                           TextSpan(
                             text: "انشاء حساب",
-                             style: getSmall17(context,color: Appcolor.primary,fontSize: 22),
+                            style: getSmall17(
+                              context,
+                              color: Appcolor.primary,
+                              fontSize: 22,
+                            ),
                             recognizer:
                                 TapGestureRecognizer()
                                   ..onTap = () {

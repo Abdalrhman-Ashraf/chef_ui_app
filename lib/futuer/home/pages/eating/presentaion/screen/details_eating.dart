@@ -42,19 +42,18 @@ class _DetailsEatingState extends State<DetailsEating> {
                   // Title + Price
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children:  [
+                    children: [
                       Text(
                         'بيتزا فراخ باربكيو',
-                        style: getBodyTextStyle(context,
-                        color: Appcolor.black,
-                        fontSize: 22
-                        )
+                        style: getBodyTextStyle(
+                          context,
+                          color: Appcolor.black,
+                          fontSize: 22,
+                        ),
                       ),
                       Text(
                         '150 جم',
-                        style: getBodyTextStyle(context,
-                        color: Appcolor.black
-                        )
+                        style: getBodyTextStyle(context, color: Appcolor.black),
                       ),
                     ],
                   ),
@@ -65,12 +64,15 @@ class _DetailsEatingState extends State<DetailsEating> {
                   // Rating Row
                   Row(
                     children: [
-                       Expanded(
-                         child: Text(
+                      Expanded(
+                        child: Text(
                           '((وقت التحضير : 20 دقيقة))',
-                          style: getBodyTextStyle(context, color: Appcolor.primary),
-                                               ),
-                       ),
+                          style: getBodyTextStyle(
+                            context,
+                            color: Appcolor.primary,
+                          ),
+                        ),
+                      ),
                       Gap(30),
                       Text('(89 مراجعة)', style: TextStyle(fontSize: 14)),
 
@@ -95,11 +97,19 @@ class _DetailsEatingState extends State<DetailsEating> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Gap(10),
-                      Text('(قسم البيتزا)',style: getBodyTextStyle(context,fontWeight: FontWeight.bold,fontSize: 33,color: Appcolor.primary),),
-                     Gap(10),
+                      Text(
+                        '(قسم البيتزا)',
+                        style: getBodyTextStyle(
+                          context,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 33,
+                          color: Appcolor.primary,
+                        ),
+                      ),
+                      Gap(10),
                       Text(
                         'مزيج شهي من صلصة الباربكيو الغنية، قطع الدجاج المشوي الطري، جبنة الموزاريلا الذائبة، والبصل الأحمر الطازج، مع لمسة من الكزبرة لتعزيز النكهة. تجربة فريدة لعشاق الطعم المدخن والمميز',
-                      style: getBodyTextStyle(context,fontSize: 22),
+                        style: getBodyTextStyle(context, fontSize: 22),
                       ),
                     ],
                   ),

@@ -20,7 +20,7 @@ class WigetBack extends StatelessWidget {
         child: Center(
           child: IconButton(
             onPressed: onpress,
-            icon: Icon(Icons.arrow_circle_left_sharp,),
+            icon: Icon(Icons.arrow_circle_left_sharp),
             color: Colors.white,
           ),
         ),

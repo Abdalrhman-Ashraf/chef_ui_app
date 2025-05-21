@@ -20,10 +20,11 @@ class Payment extends StatelessWidget {
       appBar: AppBar(
         actions: [WigetBack()],
         leading: InkWell(
-          onTap: (){
+          onTap: () {
             push(context, NotificationPage());
           },
-          child: Icon(Icons.notifications_active)),
+          child: Icon(Icons.notifications_active),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -46,8 +47,8 @@ class Payment extends StatelessWidget {
             Gap(10),
             Center(
               child: InkWell(
-                onTap: (){
-                   Show_payment_dialog(context);
+                onTap: () {
+                  Show_payment_dialog(context);
                 },
                 child: Container(
                   width: 250,
@@ -97,46 +98,43 @@ class Payment extends StatelessWidget {
             ),
 
             Expanded(
-            child: ListView(
-  children: [
-CustomListTile(
-  leadingText1: 'سحب رصيد',
-  leadingText2: 'المبلغ',
-  trailingDate: '2-1-2025',
-  trailingAmount: '150 جنية مصري',
-  svgIconPath: 'asset/icons/Vector (2).svg',
-  leadingText1Color: Appcolor.redcolor,
-  leadingText2Color: Appcolor.primary,
-),
+              child: ListView(
+                children: [
+                  CustomListTile(
+                    leadingText1: 'سحب رصيد',
+                    leadingText2: 'المبلغ',
+                    trailingDate: '2-1-2025',
+                    trailingAmount: '150 جنية مصري',
+                    svgIconPath: 'asset/icons/Vector (2).svg',
+                    leadingText1Color: Appcolor.redcolor,
+                    leadingText2Color: Appcolor.primary,
+                  ),
 
-CustomListTile(
-  leadingText1: 'سحب رصيد',
-  leadingText2: 'المبلغ',
-  trailingDate: '2-1-2025',
-  trailingAmount: '150 جنية مصري',
-  svgIconPath: 'asset/icons/Vector (2).svg',
-  leadingText1Color: Appcolor.redcolor,
-  leadingText2Color: Appcolor.primary,
-),
+                  CustomListTile(
+                    leadingText1: 'سحب رصيد',
+                    leadingText2: 'المبلغ',
+                    trailingDate: '2-1-2025',
+                    trailingAmount: '150 جنية مصري',
+                    svgIconPath: 'asset/icons/Vector (2).svg',
+                    leadingText1Color: Appcolor.redcolor,
+                    leadingText2Color: Appcolor.primary,
+                  ),
 
-CustomListTile(
-  leadingText1: 'سحب رصيد',
-  leadingText2: 'المبلغ',
-  trailingDate: '2-1-2025',
-  trailingAmount: '150 جنية مصري',
-  svgIconPath: 'asset/icons/Vector (2).svg',
-  leadingText1Color: Appcolor.redcolor,
-  leadingText2Color: Appcolor.primary,
-),
-  ],
-),
-
+                  CustomListTile(
+                    leadingText1: 'سحب رصيد',
+                    leadingText2: 'المبلغ',
+                    trailingDate: '2-1-2025',
+                    trailingAmount: '150 جنية مصري',
+                    svgIconPath: 'asset/icons/Vector (2).svg',
+                    leadingText1Color: Appcolor.redcolor,
+                    leadingText2Color: Appcolor.primary,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
       ),
     );
   }
-
-
 }

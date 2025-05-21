@@ -5,8 +5,9 @@ push(BuildContext context, Widget newpage) {
 }
 
 pushrelacement(BuildContext context, Widget newpage) {
-  Navigator.of(context)
-      .pushReplacement(MaterialPageRoute(builder: (context) => newpage));
+  Navigator.of(
+    context,
+  ).pushReplacement(MaterialPageRoute(builder: (context) => newpage));
 }
 
 pop(BuildContext context, Widget newpage) {

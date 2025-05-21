@@ -28,8 +28,12 @@ TextStyle gettitlestyle(
   );
 }
 
-TextStyle getBodyTextStyle(BuildContext? context,
-    {double? fontSize, Color? color, FontWeight? fontWeight}) {
+TextStyle getBodyTextStyle(
+  BuildContext? context, {
+  double? fontSize,
+  Color? color,
+  FontWeight? fontWeight,
+}) {
   return TextStyle(
     fontFamily: 'Changa',
     fontSize: fontSize ?? 18,
@@ -38,8 +42,12 @@ TextStyle getBodyTextStyle(BuildContext? context,
   );
 }
 
-TextStyle getSmallTextStyle(BuildContext? context,
-    {double? fontSize, Color? color, FontWeight? fontWeight}) {
+TextStyle getSmallTextStyle(
+  BuildContext? context, {
+  double? fontSize,
+  Color? color,
+  FontWeight? fontWeight,
+}) {
   return TextStyle(
     fontFamily: 'Changa',
     fontSize: fontSize ?? 16,
@@ -48,8 +56,12 @@ TextStyle getSmallTextStyle(BuildContext? context,
   );
 }
 
-TextStyle getSmall17(BuildContext? context,
-    {double? fontSize, Color? color, FontWeight? fontWeight}) {
+TextStyle getSmall17(
+  BuildContext? context, {
+  double? fontSize,
+  Color? color,
+  FontWeight? fontWeight,
+}) {
   return TextStyle(
     fontFamily: 'Changa',
     fontSize: fontSize ?? 17,
@@ -57,4 +69,3 @@ TextStyle getSmall17(BuildContext? context,
     color: color,
   );
 }
-

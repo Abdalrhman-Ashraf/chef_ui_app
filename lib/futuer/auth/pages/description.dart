@@ -50,7 +50,7 @@ class _DescriptionState extends State<Description> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-          
+
                 Stack(
                   children: [
                     CircleAvatar(
@@ -80,7 +80,9 @@ class _DescriptionState extends State<Description> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(12),
                                       color:
-                                          Theme.of(context).scaffoldBackgroundColor,
+                                          Theme.of(
+                                            context,
+                                          ).scaffoldBackgroundColor,
                                     ),
                                     width: double.infinity,
                                     child: TextButton(
@@ -103,7 +105,9 @@ class _DescriptionState extends State<Description> {
                                     margin: EdgeInsets.all(10),
                                     decoration: BoxDecoration(
                                       color:
-                                          Theme.of(context).scaffoldBackgroundColor,
+                                          Theme.of(
+                                            context,
+                                          ).scaffoldBackgroundColor,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     width: double.infinity,
@@ -141,56 +145,64 @@ class _DescriptionState extends State<Description> {
                         ),
                       ),
                     ),
-                  
                   ],
                 ),
-            SizedBox(height: 10,),
-                     Text(
-              'الشيف محمد',
+                SizedBox(height: 10),
+                Text(
+                  'الشيف محمد',
                   style: getBodyTextStyle(
                     context,
                     fontSize: 33,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-               Padding(
-                 padding: const EdgeInsets.symmetric(horizontal: 25,vertical: 10),
-                 child: TextFormField(
-                  
-                  maxLines: 3, // Ensures the TextFormField has 6 lines
-                  decoration: InputDecoration(
-                    hintText: "الوصف..........",
-                    border: OutlineInputBorder(
-                      
-                      borderSide: const BorderSide(color: Colors.orange, width: 3), // Orange border
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 25,
+                    vertical: 10,
+                  ),
+                  child: TextFormField(
+                    maxLines: 3, // Ensures the TextFormField has 6 lines
+                    decoration: InputDecoration(
+                      hintText: "الوصف..........",
+                      border: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          color: Colors.orange,
+                          width: 3,
+                        ), // Orange border
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: const BorderSide(
+                          color: Colors.orange,
+                          width: 3,
+                        ), // Border when enabled
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          color: Colors.orange,
+                          width: 2,
+                        ), // Border when focused
+                      ),
                     ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: const BorderSide(color: Colors.orange, width: 3), // Border when enabled
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.orange, width: 2), // Border when focused
-                    ),
-                  )),
-               ),
-               
-               SizedBox(height: 22,),
-                  Container(
-                    decoration:BoxDecoration(
-                      borderRadius: BorderRadius.circular(22),
-                      color: Appcolor.primary,
-                    ),
-                    
-                    child: Primarybutton(
-                          
-                    onpress: (){
+                  ),
+                ),
+
+                SizedBox(height: 22),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(22),
+                    color: Appcolor.primary,
+                  ),
+
+                  child: Primarybutton(
+                    onpress: () {
                       push(context, Verifyotp());
                     },
-                          buttontext: "تسجيل",
-                          fontsize: 23,
-                        ),
+                    buttontext: "تسجيل",
+                    fontsize: 23,
                   ),
-                 
+                ),
               ],
             ),
           ),

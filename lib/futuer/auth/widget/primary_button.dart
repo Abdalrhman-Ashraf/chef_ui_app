@@ -1,7 +1,6 @@
 import 'package:chef_ui_app/core/constant/colors.dart';
 import 'package:flutter/material.dart';
 
-
 class Primarybutton extends StatelessWidget {
   final String? buttontext;
   final Color? buttoncolor;
@@ -41,7 +40,7 @@ class Primarybutton extends StatelessWidget {
         buttontext ?? "",
         style: TextStyle(
           color: textcolor ?? Colors.white,
-         // fontFamily: AppFonts.mainfontsname,
+          // fontFamily: AppFonts.mainfontsname,
           fontWeight: fontWeight,
           fontSize: fontsize ?? 16,
         ),

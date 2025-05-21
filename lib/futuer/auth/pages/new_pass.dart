@@ -79,7 +79,7 @@ class _New_passwordState extends State<New_password> {
                       fontWeight: FontWeight.bold,
                       width: 320,
                       onpress: () {
-                       // show_dialog(context,'تم تعديل كلمة السر بنجاح',);
+                        // show_dialog(context,'تم تعديل كلمة السر بنجاح',);
                       },
                     ),
                   ],
@@ -91,6 +91,4 @@ class _New_passwordState extends State<New_password> {
       ),
     );
   }
-
-
 }

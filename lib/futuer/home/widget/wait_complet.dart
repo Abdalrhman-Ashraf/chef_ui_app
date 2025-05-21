@@ -34,8 +34,8 @@ class OrderCardSecondary extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset('asset/solar_user.png',fit: BoxFit.contain,),
-                    SizedBox(width: 3,),
+                    Image.asset('asset/solar_user.png', fit: BoxFit.contain),
+                    SizedBox(width: 3),
                     Text(
                       name,
                       style: const TextStyle(
@@ -71,8 +71,8 @@ class OrderCardSecondary extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Image.asset(image,height: 70,width: 50,),
-                    SizedBox(width: 5,),
+                    Image.asset(image, height: 70, width: 50),
+                    SizedBox(width: 5),
                     Text(
                       item,
                       style: getBodyTextStyle(
@@ -111,7 +111,7 @@ class OrderCardSecondary extends StatelessWidget {
                           price,
                           style: getBodyTextStyle(
                             context,
-                            
+
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -127,16 +127,21 @@ class OrderCardSecondary extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('التحضير',style: TextStyle(fontSize: 20, color: Appcolor.white,fontWeight: FontWeight.bold)),
+                  child: Text(
+                    'التحضير',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Appcolor.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   style: ButtonStyle(
                     backgroundColor: WidgetStatePropertyAll(Appcolor.primary),
                     padding: WidgetStatePropertyAll(
                       EdgeInsets.symmetric(horizontal: 125),
                     ),
-                    
                   ),
                 ),
-              
               ],
             ),
           ],

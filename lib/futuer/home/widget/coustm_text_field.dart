@@ -5,11 +5,12 @@ class ProfileTextField extends StatelessWidget {
   final TextEditingController controller;
   final bool obscureText;
 
-  const ProfileTextField(
-      {super.key,
-      required this.label,
-      required this.controller,
-      this.obscureText = false});
+  const ProfileTextField({
+    super.key,
+    required this.label,
+    required this.controller,
+    this.obscureText = false,
+  });
 
   @override
   Widget build(BuildContext context) {

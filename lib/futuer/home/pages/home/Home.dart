@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: notification(context),
+      appBar: notification(context),
       backgroundColor: Colors.grey[200],
       body: SafeArea(
         child: Column(
@@ -57,7 +57,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 ),
                 indicatorColor: Appcolor.primary,
 
-                labelStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
+                labelStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17,
+                ),
                 isScrollable: true,
                 tabs: tabs.map((e) => Tab(text: e)).toList(),
               ),
@@ -272,7 +275,6 @@ class StatusOrderCard extends StatelessWidget {
               ),
             ),
             SizedBox(width: 10), // Add spacing between Text and Icon/Image
-
             // Rejected status icon
           ],
         ),

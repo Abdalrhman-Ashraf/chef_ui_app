@@ -21,8 +21,7 @@ class _ReseetPassState extends State<ReseetPass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
-       
+      appBar: AppBar(
         actions: [
           WigetBack(
             onpress: () {
@@ -33,37 +32,40 @@ class _ReseetPassState extends State<ReseetPass> {
       ),
       body: Center(
         child: Column(
-          
           children: [
-            
-            Text('اعادة تعين كلمة السر',style: getBodyTextStyle(context,fontSize: 28),),
+            Text(
+              'اعادة تعين كلمة السر',
+              style: getBodyTextStyle(context, fontSize: 28),
+            ),
             Spacer(),
-            Image.asset(Appicons.resetPass,fit: BoxFit.cover,),
+            Image.asset(Appicons.resetPass, fit: BoxFit.cover),
             Spacer(),
-           Text('ادخل رقم الهاتف المرتبط بحسابك وسنرسل اليك رمز',style: getBodyTextStyle(context,fontSize: 15,)),
-           Text('لإعادة تعيين كلمة المرور الخاصة بك',style: getBodyTextStyle(context,fontSize: 15),),
-           Spacer(),
-           CustomTextField(
-                      
-                      
-                      
-                      hintText: "رقم الهاتف",
-                      
-                      obscureText: false,
-                      sufixicon: Icon(Icons.phone),
-                     
-                    ),
-                    Spacer(flex: 1,),
-                    Primarybutton(
-                      buttontext: 'ارسال الرمز',
-                      fontsize: 23,
-                      fontWeight: FontWeight.bold,
-                      onpress: (){
-                        push(context, Verifyotp());
-                      },
-                    ),
-                    Spacer(flex: 2,),
-           ],
+            Text(
+              'ادخل رقم الهاتف المرتبط بحسابك وسنرسل اليك رمز',
+              style: getBodyTextStyle(context, fontSize: 15),
+            ),
+            Text(
+              'لإعادة تعيين كلمة المرور الخاصة بك',
+              style: getBodyTextStyle(context, fontSize: 15),
+            ),
+            Spacer(),
+            CustomTextField(
+              hintText: "رقم الهاتف",
+
+              obscureText: false,
+              sufixicon: Icon(Icons.phone),
+            ),
+            Spacer(flex: 1),
+            Primarybutton(
+              buttontext: 'ارسال الرمز',
+              fontsize: 23,
+              fontWeight: FontWeight.bold,
+              onpress: () {
+                push(context, Verifyotp());
+              },
+            ),
+            Spacer(flex: 2),
+          ],
         ),
       ),
     );

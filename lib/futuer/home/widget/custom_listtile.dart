@@ -66,16 +66,9 @@ class CustomListTile extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                  trailingDate,
-                  style: getBodyTextStyle(context),
-                ),
+                Text(trailingDate, style: getBodyTextStyle(context)),
                 SizedBox(width: 5),
-                SvgPicture.asset(
-                  svgIconPath,
-                  height: 20,
-                  width: 20,
-                ),
+                SvgPicture.asset(svgIconPath, height: 20, width: 20),
               ],
             ),
             SizedBox(height: 8),

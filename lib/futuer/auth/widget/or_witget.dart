@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class OrWitget extends StatelessWidget {
   const OrWitget({super.key});
 
@@ -22,7 +21,7 @@ class OrWitget extends StatelessWidget {
             "OR",
             style: TextStyle(
               fontSize: 20,
-            //  fontFamily: AppFonts.mainfontsname,
+              //  fontFamily: AppFonts.mainfontsname,
               color: Colors.blueGrey,
             ),
           ),

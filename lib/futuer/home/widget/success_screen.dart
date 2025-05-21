@@ -27,11 +27,7 @@ class SuccessDialog extends StatelessWidget {
             Stack(
               alignment: Alignment.center,
               children: [
-                Image.asset(
-                  'asset/Bubbles.png',
-                  width: 150,
-                  height: 150,
-                ),
+                Image.asset('asset/Bubbles.png', width: 150, height: 150),
                 const CircleAvatar(
                   radius: 50,
                   backgroundColor: Colors.orange,
@@ -55,10 +51,7 @@ class SuccessDialog extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               message,
-              style: const TextStyle(
-                fontSize: 18,
-                color: Colors.black,
-              ),
+              style: const TextStyle(fontSize: 18, color: Colors.black),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 25),
